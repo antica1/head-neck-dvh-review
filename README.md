@@ -53,3 +53,15 @@ Zhu Guopei, MD — Shanghai Ninth People's Hospital. Contact: antica@gmail.com
 ## License
 
 MIT
+
+## Related Skills — Shanghai Ninth People's Hospital Head & Neck RT Series
+
+| Skill | Description |
+|-------|-------------|
+| [NPC Target Delineation](https://github.com/antica1/npc-rt-target-delineation) | Lancet 2025 + IG-2024, skull base millimeter-level |
+| [HNCUP Target Delineation](https://github.com/antica1/HNCUP-rt-targets) | Occult primary, selective mucosal RT |
+| [ACC Post-op RT](https://github.com/antica1/head-neck-acc-rt-targets) | Sensory nerve pathway, facial nerve management |
+| [Orbital Tumor RT](https://github.com/antica1/orbital-tumor-rt-targets) | Compartment irradiation, VIII/IX/IIa cascade |
+| [**DVH Plan Review**](https://github.com/antica1/head-neck-dvh-review) | One-glance pass/fail, dual-track physicist/physician reports |
+| [Re-Irradiation Planning](https://github.com/antica1/head-neck-reirradiation) | Quad-Shot + SBRT + IO/ADC, cumulative BED |
+| [All Skills](https://github.com/antica1) | Six skills from Shanghai Ninth People's Hospital |
