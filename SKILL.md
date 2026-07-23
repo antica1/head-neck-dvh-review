@@ -4,13 +4,27 @@ description: "One-glance DVH plan acceptability assessment for HEAD & NECK radio
 version: 1.3.0
 author: Zhu Guopei / Shanghai Ninth People's Hospital
 license: MIT
-nmetadata:
+metadata:
   hermes:
     tags: [head-neck, radiotherapy, dvh-plan-review, SBRT, OAR-constraints]
+    triggers_on: [DVH, 计划审核, 物理师审核, 计划评估, 剂量约束, OAR审核, 靶区覆盖, 脊髓约束, 脑干约束, 视交叉约束, 腮腺约束, SBRT约束, QUANTEC, 双轨制, plan review, plan check, dose constraint, DVH review]
     references: ["Timmerman R. IJROBP 2022;112(1):4-21", "H&N IMRT clinical protocol OAR priority table"]
 ---
 
 # 头颈肿瘤放疗计划 DVH 快速审核
+
+## 铁律清单
+
+| # | 铁律 | 触发条件 |
+|---|------|---------|
+| 1 | 硬约束一票否决（脑干≤54/脊髓≤45/视交叉≤54） | 任何DVH审核开始时首先检查 |
+| 2 | 双轨制（物理师筛子+医生裁决） | 计划报告生成流程 |
+| 3 | QUANTEC四维批判（部分容积/分次BED/再程间隔/年龄） | 任何约束超标需修正判断时 |
+| 4 | SBRT >6 Gy/fx 时BED失真 | SBRT方案评估 |
+| 5 | 靶区覆盖优先于软约束 | PTV D98% vs 下颌骨/腮腺冲突 |
+| 6 | 瘫痪 > 口干 > ORN | 冲突裁决优先级排序 |
+| 7 | BED修正因子 | 分次剂量<2 Gy / 部分容积 / 姑息老年时 |
+| 8 | 冲突裁决铁律：硬约束 > 靶区 > 软约束 > 优化目标 | 任何DVH冲突裁决 |
 
 ## 物理师和住院医生的计划审核卡片
 
